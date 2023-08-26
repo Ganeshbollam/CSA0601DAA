@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("enter the number");
+	scanf("%d",&n);
+	try
+	{
+	int s=0,a;
+	while(n!=0)
+	{
+		a=n%10;
+		s=s*10+a;
+		n=n/10;
+	}
+	printf("%d",s);
+    }
+    catch(Exception e)
+    {
+	printf("invalid input");
+    }
+}
